@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Neuralyzer - Settings</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+
+<body>
+    <div id="input-container">
+        <fieldset>
+            <legend>Clear the following when button is clicked</legend>
+            <div class="setting-item">
+                <input type="checkbox" id="cookies">
+                <label for="cookies">Cookies</label>
+            </div>
+            <div class="setting-item">
+                <input type="checkbox" id="localStorage">
+                <label for="localStorage">localStorage</label>
+            </div>
+            <div class="setting-item">
+                <input type="checkbox" id="cache">
+                <label for="cache">Cache</label>
+            </div>
+            <div class="setting-item">
+                <input type="checkbox" id="sessionStorage">
+                <label for="sessionStorage">Session</label>
+            </div>
+ 
+            <p id="status"></p>
+            <button id="save">Save</button>
+        </fieldset>
+    </div>
+
+    <script src="options.js"></script>
+</body>
+
+</html>

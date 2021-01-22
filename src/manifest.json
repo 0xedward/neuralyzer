@@ -1,0 +1,26 @@
+{
+  "name": "Neuralyzer",
+  "description": "Removes cookies, cache, localStorage, and sessionStorage on your current site",
+  "version": "1.0.0",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "activeTab",
+    "browsingData",
+    "contextMenus",
+    "storage"
+  ],
+  "browser_action": {
+    "default_title": "Wipe my data on this page",
+    "default_icon": "assets/icon.png"
+  },
+  "options_page": "options/options.html",
+  "icons": {
+    "16": "assets/store_icon.png",
+    "48": "assets/store_icon.png",
+    "128": "assets/store_icon.png"
+  },
+  "manifest_version": 2
+}
