@@ -2,7 +2,11 @@
 
 Neuralyzer is a Chrome extension that clears the cache, cookies, localStorage, IndexedDB and sessionStorage on the tab you are currently on. The extension can be activated by clicking the extension icon on your browser toolbar or by right-clicking the page you are on and selecting the extension's menu item.
 
+![Neuralyzer Demo Run on Google](/screenshots/demo.gif)
+
 You can also customize what data you want to be cleared, when the extension is run, on the options page.
+
+![](/screenshots/options_page.png)
 
 This extension is useful when you don't trust the security or privacy of the website you are currently on. For example, running the extension before leaving a site will help if you want to ensure you have logged out of a site or prevent a site from tracking you across visits.
 
