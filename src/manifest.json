@@ -1,6 +1,6 @@
 {
   "name": "Neuralyzer",
-  "description": "Clears cookies, cache, localStorage, and sessionStorage for the site you are currently on",
+  "description": "Wipe your sensitive data on the site you are currently on",
   "version": "1.0.0",
   "background": {
     "scripts": ["background.js"],
