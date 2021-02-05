@@ -1,6 +1,6 @@
 {
   "name": "Neuralyzer",
-  "description": "Removes cookies, cache, localStorage, and sessionStorage on your current site",
+  "description": "Clears cookies, cache, localStorage, and sessionStorage for the site you are currently on",
   "version": "1.0.0",
   "background": {
     "scripts": ["background.js"],
