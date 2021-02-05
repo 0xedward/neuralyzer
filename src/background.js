@@ -20,11 +20,13 @@ function clearData() {
       'localStorageSetting': true,
       'cacheSetting': true,
       'sessionStorageSetting': true,
+      'indexedDBSetting': true
     }, function(userPrefs) {
       const userDisabledAllSettings = userPrefs['cookiesSetting'] !== false ||
         userPrefs['localStorageSetting'] !== false ||
         userPrefs['cacheSetting'] !== false ||
-        userPrefs['sessionStorageSetting'] !== false;
+        userPrefs['sessionStorageSetting'] !== false ||
+        userPrefs['indexedDBSetting'] !== false;
 
       if (userDisabledAllSettings) {
         // Get user's current url
@@ -63,6 +65,7 @@ function clearData() {
                 'cache': userPrefs['cacheSetting'],
                 'cookies': userPrefs['cookiesSetting'],
                 'localStorage': userPrefs['localStorageSetting'],
+                'indexedDB': userPrefs['indexedDBSetting']
               }, function() {
                 if (userPrefs['cacheSetting']) {
                   console.log('cache was cleared');
@@ -73,7 +76,9 @@ function clearData() {
                 if (userPrefs['localStorageSetting']) {
                   console.log('localStorage was cleared');
                 }
-
+                if (userPrefs['indexedDBSetting']) {
+                  console.log('indexedDB was cleared');
+                }
                 // Update icon to notify user, clearing data was successful
                 chrome.browserAction.setIcon(
                     {'path': 'assets/flash.png'},

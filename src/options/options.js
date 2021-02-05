@@ -5,6 +5,7 @@ function saveOptions() {
   const isLocalStorageChecked = document.getElementById('localStorage').checked;
   const isCacheChecked = document.getElementById('cache').checked;
   const isSessionStorageChecked = document.getElementById('sessionStorage').checked;
+  const isIndexedDBChecked = document.getElementById('indexedDB').checked;
   const status = document.getElementById('status');
 
   try {
@@ -13,6 +14,7 @@ function saveOptions() {
       localStorageSetting: isLocalStorageChecked,
       cacheSetting: isCacheChecked,
       sessionStorageSetting: isSessionStorageChecked,
+      indexedDBSetting: isIndexedDBChecked
     }, function() {
       status.textContent = `Your settings have been saved`;
       setTimeout(function() {
@@ -31,11 +33,13 @@ function restoreOptions() {
       'localStorageSetting': true,
       'cacheSetting': true,
       'sessionStorageSetting': true,
+      'indexedDBSetting': true
     }, function(items) {
       document.getElementById('cookies').checked = items['cookiesSetting'];
       document.getElementById('localStorage').checked = items['localStorageSetting'];
       document.getElementById('cache').checked = items['cacheSetting'];
       document.getElementById('sessionStorage').checked = items['sessionStorageSetting'];
+      document.getElementById('indexedDB').checked = items['indexedDBSetting'];
     });
   } catch (err) {
     console.log(`Unexpected error when accessing storage from options page: ${err}`);
