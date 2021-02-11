@@ -1,5 +1,10 @@
 # Neuralyzer
 
+[![Neuralyzer Chrome Web Store link](https://storage.googleapis.com/chrome-gcs-uploader.appspot.com/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png)](https://chrome.google.com/webstore/detail/neuralyzer/lnkchhelcojopohhlmfjaofdfjfnhdgk)
+
+![Extension version deployed to Chrome Web Store](https://img.shields.io/chrome-web-store/v/lnkchhelcojopohhlmfjaofdfjfnhdgk?label=Chrome%20web%20store%20version%20)
+![Number of Extension Users](https://img.shields.io/chrome-web-store/users/lnkchhelcojopohhlmfjaofdfjfnhdgk?color=2379C83D)
+
 Neuralyzer is a Chrome extension that clears the cache, cookies, localStorage, IndexedDB and sessionStorage on the tab you are currently on. The extension can be activated by clicking the extension icon on your browser toolbar or by right-clicking the page you are on and selecting the extension's menu item.
 
 ![Neuralyzer Demo Run on Google](/screenshots/demo.gif)
