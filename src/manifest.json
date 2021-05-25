@@ -1,5 +1,6 @@
 {
   "name": "Neuralyzer",
+  "author": "0xedward",
   "description": "Wipe your sensitive data on the site you are currently on",
   "version": "1.0.0",
   "background": {
